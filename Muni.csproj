@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\propiedadesCreate.aspx" />
+    <Content Include="Pages\propiedadesCRUD.aspx" />
+    <Content Include="Pages\propiedadesDelete.aspx" />
+    <Content Include="Pages\propiedadesUpdate.aspx" />
     <Content Include="Pages\usuariosCreate.aspx" />
     <Content Include="Pages\AdminPage.aspx" />
     <Content Include="Pages\crudTables.aspx" />
@@ -89,6 +93,34 @@
   <ItemGroup>
     <Compile Include="Classes\God.cs" />
     <Compile Include="Classes\MessageBox.cs" />
+    <Compile Include="Pages\propiedadesCreate.aspx.cs">
+      <DependentUpon>propiedadesCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propiedadesCreate.aspx.designer.cs">
+      <DependentUpon>propiedadesCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\propiedadesCRUD.aspx.cs">
+      <DependentUpon>propiedadesCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propiedadesCRUD.aspx.designer.cs">
+      <DependentUpon>propiedadesCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\propiedadesDelete.aspx.cs">
+      <DependentUpon>propiedadesDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propiedadesDelete.aspx.designer.cs">
+      <DependentUpon>propiedadesDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\propiedadesUpdate.aspx.cs">
+      <DependentUpon>propiedadesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propiedadesUpdate.aspx.designer.cs">
+      <DependentUpon>propiedadesUpdate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\usuariosCreate.aspx.cs">
       <DependentUpon>usuariosCreate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

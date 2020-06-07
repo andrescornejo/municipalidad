@@ -24,7 +24,7 @@ namespace Muni.Pages
         }
         protected void crudPropiedadesBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("usuariosCRUD.aspx?username=" + usernameGot);
+            Response.Redirect("propiedadesCRUD.aspx?username=" + usernameGot);
         }
         protected void crudUsuariosBtn_Click(object sender, EventArgs e)
         {

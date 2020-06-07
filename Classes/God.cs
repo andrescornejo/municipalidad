@@ -419,5 +419,51 @@ namespace Muni.Classes
             connection.Close();
         }
 
+        public static void addPropiedad(int numFinca, int valor, string dir)
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Preparo el comando
+            SqlCommand cmd = new SqlCommand("csp_adminAddPropiedades", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Agregar los parametros
+            cmd.Parameters.AddWithValue("@inputNumFinca", numFinca);
+            cmd.Parameters.AddWithValue("@inputValorFinca", valor);
+            cmd.Parameters.AddWithValue("@inputDir", dir);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto el SP
+            int rowAffected = cmd.ExecuteNonQuery();
+
+            //Cierro la conexion
+            connection.Close();
+        }
+        public static void deletePropiedad(int numFinca)
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Preparo el comando
+            SqlCommand cmd = new SqlCommand("csp_adminDeletePropiedad", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Agregar los parametros
+            cmd.Parameters.AddWithValue("@numFincaInput", numFinca);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto el SP
+            int rowAffected = cmd.ExecuteNonQuery();
+
+            //Cierro la conexion
+            connection.Close();
+        }
+
+
     }
 }
