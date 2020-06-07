@@ -51,6 +51,15 @@ namespace Muni.Pages
         protected global::System.Web.UI.WebControls.Button agregarUsuariosBtn;
 
         /// <summary>
+        /// crudTablesBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button crudTablesBtn;
+
+        /// <summary>
         /// verPropiedadesDePropietarioBtn control.
         /// </summary>
         /// <remarks>

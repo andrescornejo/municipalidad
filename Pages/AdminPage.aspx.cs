@@ -24,6 +24,11 @@ namespace Muni.Pages
         {
             Response.Redirect("addUsersFromAdmin.aspx");
         }
+
+        protected void crudBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("crudTables.aspx");
+        }
         protected void verPropiedadesDePropietarioBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("verPropiedadesDePropietario.aspx");

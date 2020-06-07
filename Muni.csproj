@@ -69,8 +69,13 @@
   <ItemGroup>
     <Content Include="Pages\addUsersFromAdmin.aspx" />
     <Content Include="Pages\AdminPage.aspx" />
+    <Content Include="Pages\crudTables.aspx" />
     <Content Include="Pages\MainPage.aspx" />
     <None Include="Resources\ColorPalette.PNG" />
+    <Content Include="Pages\propietariosCreate.aspx" />
+    <Content Include="Pages\propietariosCRUD.aspx" />
+    <Content Include="Pages\propietariosDelete.aspx" />
+    <Content Include="Pages\propietariosUpdate.aspx" />
     <Content Include="Pages\verPropiedadesDeUsuario.aspx" />
     <Content Include="Pages\verPropietarioDePropiedad.aspx" />
     <Content Include="Pages\verPropiedadesDePropietario.aspx" />
@@ -95,12 +100,47 @@
     <Compile Include="Pages\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\crudTables.aspx.cs">
+      <DependentUpon>crudTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\crudTables.aspx.designer.cs">
+      <DependentUpon>crudTables.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\MainPage.aspx.designer.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\propietariosCreate.aspx.cs">
+      <DependentUpon>propietariosCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propietariosCreate.aspx.designer.cs">
+      <DependentUpon>propietariosCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\propietariosCRUD.aspx.cs">
+      <DependentUpon>propietariosCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propietariosCRUD.aspx.designer.cs">
+      <DependentUpon>propietariosCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\propietariosDelete.aspx.cs">
+      <DependentUpon>propietariosDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propietariosDelete.aspx.designer.cs">
+      <DependentUpon>propietariosDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\propietariosUpdate.aspx.cs">
+      <DependentUpon>propietariosUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\propietariosUpdate.aspx.designer.cs">
+      <DependentUpon>propietariosUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\verPropiedadesDeUsuario.aspx.cs">
       <DependentUpon>verPropiedadesDeUsuario.aspx</DependentUpon>

@@ -11,7 +11,7 @@ namespace Muni.Pages
 {
 
 
-    public partial class addUsersFromAdmin
+    public partial class propietariosCRUD
     {
 
         /// <summary>
@@ -42,67 +42,40 @@ namespace Muni.Pages
         protected global::System.Web.UI.WebControls.Label catergoryLbl;
 
         /// <summary>
-        /// userLabel control.
+        /// createPropietariosBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label userLabel;
+        protected global::System.Web.UI.WebControls.Button createPropietariosBtn;
 
         /// <summary>
-        /// usernameTxtBox control.
+        /// updatePropietariosBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameTxtBox;
+        protected global::System.Web.UI.WebControls.Button updatePropietariosBtn;
 
         /// <summary>
-        /// passwdLabel control.
+        /// deletePropietariosBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label passwdLabel;
+        protected global::System.Web.UI.WebControls.Button deletePropietariosBtn;
 
         /// <summary>
-        /// passwdTxtBox control.
+        /// labelListaPropietarios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwdTxtBox;
-
-        /// <summary>
-        /// isAdminLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label isAdminLabel;
-
-        /// <summary>
-        /// isAdminCheckbox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox isAdminCheckbox;
-
-        /// <summary>
-        /// addUserBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addUserBtn;
+        protected global::System.Web.UI.WebControls.Label labelListaPropietarios;
 
         /// <summary>
         /// gridView control.

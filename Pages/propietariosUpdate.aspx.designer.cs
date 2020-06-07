@@ -11,7 +11,7 @@ namespace Muni.Pages
 {
 
 
-    public partial class addUsersFromAdmin
+    public partial class propietariosUpdate
     {
 
         /// <summary>
@@ -42,67 +42,94 @@ namespace Muni.Pages
         protected global::System.Web.UI.WebControls.Label catergoryLbl;
 
         /// <summary>
-        /// userLabel control.
+        /// labelOLDDocID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label userLabel;
+        protected global::System.Web.UI.WebControls.Label labelOLDDocID;
 
         /// <summary>
-        /// usernameTxtBox control.
+        /// textBoxOLDID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameTxtBox;
+        protected global::System.Web.UI.WebControls.TextBox textBoxOLDID;
 
         /// <summary>
-        /// passwdLabel control.
+        /// labelNombrePropietario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label passwdLabel;
+        protected global::System.Web.UI.WebControls.Label labelNombrePropietario;
 
         /// <summary>
-        /// passwdTxtBox control.
+        /// textBoxNameInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwdTxtBox;
+        protected global::System.Web.UI.WebControls.TextBox textBoxNameInput;
 
         /// <summary>
-        /// isAdminLabel control.
+        /// labelDocID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label isAdminLabel;
+        protected global::System.Web.UI.WebControls.Label labelDocID;
 
         /// <summary>
-        /// isAdminCheckbox control.
+        /// textBoxDocIDInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox isAdminCheckbox;
+        protected global::System.Web.UI.WebControls.TextBox textBoxDocIDInput;
 
         /// <summary>
-        /// addUserBtn control.
+        /// labelIDType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addUserBtn;
+        protected global::System.Web.UI.WebControls.Label labelIDType;
+
+        /// <summary>
+        /// DropDownListIDType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListIDType;
+
+        /// <summary>
+        /// updatePropietarioBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updatePropietarioBtn;
+
+        /// <summary>
+        /// labelListaPropietarios control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelListaPropietarios;
 
         /// <summary>
         /// gridView control.

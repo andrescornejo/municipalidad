@@ -258,10 +258,7 @@ namespace Muni.Classes
             //Pido conexion
             SqlConnection connection = getConnection();
 
-            //Variable que guarda la tabla resultante del sp
-            DataTable datatable = new DataTable();
-
-            //Preparo el SqlDataAdapter
+            //Preparo el comando
             SqlCommand cmd = new SqlCommand("csp_adminAddUser", connection);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -276,6 +273,55 @@ namespace Muni.Classes
             //Ejecuto el SP
             int rowAffected = cmd.ExecuteNonQuery();
        
+            //Cierro la conexion
+            connection.Close();
+        }
+
+        public static void addPropietario(string name, string docID, string docIDVal)
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Preparo el comando
+            SqlCommand cmd = new SqlCommand("csp_adminAddPropietario", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Agregar los parametros
+            cmd.Parameters.AddWithValue("@inputName", name);
+            cmd.Parameters.AddWithValue("@inputDocIDVal", docID);
+            cmd.Parameters.AddWithValue("@inputDocID", docIDVal);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto el SP
+            int rowAffected = cmd.ExecuteNonQuery();
+
+            //Cierro la conexion
+            connection.Close();
+        }
+
+        public static void updatePropietario(string OldDocIDVal,string name, string docID, string docIDVal)
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Preparo el comando
+            SqlCommand cmd = new SqlCommand("csp_adminUpdatePropietario", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Agregar los parametros
+            cmd.Parameters.AddWithValue("@inputOLDDocID", OldDocIDVal);
+            cmd.Parameters.AddWithValue("@inputName", name);
+            cmd.Parameters.AddWithValue("@inputDocIDVal", docID);
+            cmd.Parameters.AddWithValue("@inputDocID", docIDVal);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto el SP
+            int rowAffected = cmd.ExecuteNonQuery();
+
             //Cierro la conexion
             connection.Close();
         }
