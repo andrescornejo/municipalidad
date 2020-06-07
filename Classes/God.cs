@@ -121,6 +121,30 @@ namespace Muni.Classes
             return datatable;
         }
 
+        public static DataTable getUsuarios()
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Variable que guarda la tabla resultante del sp
+            DataTable datatable = new DataTable();
+
+            //Preparo el SqlDataAdapter
+            SqlDataAdapter sqlda = new SqlDataAdapter("csp_getUsuarios", connection);
+            sqlda.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto y guardo la tabla en la variable
+            sqlda.Fill(datatable);
+
+            //Cierro la conexion
+            connection.Close();
+
+            return datatable;
+        }
+
         public static DataTable getPropiedadesFromPropietarioDocID(string id)
         {
             //Pido conexion
@@ -315,6 +339,75 @@ namespace Muni.Classes
             cmd.Parameters.AddWithValue("@inputName", name);
             cmd.Parameters.AddWithValue("@inputDocIDVal", docID);
             cmd.Parameters.AddWithValue("@inputDocID", docIDVal);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto el SP
+            int rowAffected = cmd.ExecuteNonQuery();
+
+            //Cierro la conexion
+            connection.Close();
+        }
+
+        public static void deletePropietario(string docID)
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Preparo el comando
+            SqlCommand cmd = new SqlCommand("csp_adminDeletePropietario", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Agregar los parametros
+            cmd.Parameters.AddWithValue("@InputDocID", docID);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto el SP
+            int rowAffected = cmd.ExecuteNonQuery();
+
+            //Cierro la conexion
+            connection.Close();
+        }
+
+        public static void updateUsuario(string OldUsername, string username, string password, bool isAdmin)
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Preparo el comando
+            SqlCommand cmd = new SqlCommand("csp_adminUpdateUsuario", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Agregar los parametros
+            cmd.Parameters.AddWithValue("@inputOLDUsername", OldUsername);
+            cmd.Parameters.AddWithValue("@inputNewUsername", username);
+            cmd.Parameters.AddWithValue("@inputNewPassword", password);
+            cmd.Parameters.AddWithValue("@inputAdminStatus", isAdmin);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Ejecuto el SP
+            int rowAffected = cmd.ExecuteNonQuery();
+
+            //Cierro la conexion
+            connection.Close();
+        }
+
+        public static void deleteUsuario(string username)
+        {
+            //Pido conexion
+            SqlConnection connection = getConnection();
+
+            //Preparo el comando
+            SqlCommand cmd = new SqlCommand("csp_adminDeleteUsuario", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            //Agregar los parametros
+            cmd.Parameters.AddWithValue("@usuarioIDInput", username);
 
             //Abro la conexion
             connection.Open();

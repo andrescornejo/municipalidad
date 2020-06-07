@@ -24,11 +24,11 @@ namespace Muni.Pages
         }
         protected void crudPropiedadesBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminPage.aspx?username=" + usernameGot);
+            Response.Redirect("usuariosCRUD.aspx?username=" + usernameGot);
         }
         protected void crudUsuariosBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminPage.aspx?username=" + usernameGot);
+            Response.Redirect("usuariosCRUD.aspx?username=" + usernameGot);
         }
     }
 }

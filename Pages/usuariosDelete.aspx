@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="propietariosDelete.aspx.cs" Inherits="Muni.Pages.propietariosDelete" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="usuariosDelete.aspx.cs" Inherits="Muni.Pages.usuariosDelete" %>
 
 <!DOCTYPE html>
 
@@ -12,18 +12,18 @@
             <asp:Button ID="backBtn" runat="server" Text="Back" Width="200px" BorderWidth="0px" Font-Bold="True" Font-Names="Bahnschrift" Font-Size="40px" ForeColor="White" style="margin-top:5px ;background-color:#ff6f5e" OnClick="backBtn_Click"/>
         </div>
         <div style="text-align:center">
-            <asp:Label ID="catergoryLbl" runat="server" Font-Names="Bahnschrift" Font-Size="75px" ForeColor="White" Text="Borrar propietarios"></asp:Label>       
+            <asp:Label ID="catergoryLbl" runat="server" Font-Names="Bahnschrift" Font-Size="75px" ForeColor="White" Text="Borrar usuarios"></asp:Label>       
         </div>
         <div style="text-align:center;margin-top:50px">
-            <asp:Label ID="labelDocIDPropietario" runat="server" Text="Documento legal del propietario" Font-Names="Bahnschrift" ForeColor="White"  Font-Size="30px"></asp:Label>
+            <asp:Label ID="labelUsername" runat="server" Text="Nombre de usuario" Font-Names="Bahnschrift" ForeColor="White"  Font-Size="30px"></asp:Label>
             <br/>
-            <asp:TextBox ID="textBoxDocIDInput" runat="server" style="margin-top:10px;margin-bottom:10px" Font-Names="Bahnschrift" Width="250px" Font-Size="30px"></asp:TextBox>
+            <asp:TextBox ID="textBoxUsername" runat="server" style="margin-top:10px;margin-bottom:10px" Font-Names="Bahnschrift" Width="250px" Font-Size="30px"></asp:TextBox>
             <br/>
-            <asp:Button ID="deletePropietarioBtn" runat="server" Text="Borrar propietario" Width="500px" BorderWidth="0px" Font-Bold="True" Font-Names="Bahnschrift" Font-Size="40px" ForeColor="White" style="margin-top:5px ;background-color:#ff6f5e" OnClick="deletePropietarioBtn_Click"/>
+            <asp:Button ID="deleteUsuarioBtn" runat="server" Text="Borrar usuario" Width="500px" BorderWidth="0px" Font-Bold="True" Font-Names="Bahnschrift" Font-Size="40px" ForeColor="White" style="margin-top:5px ;background-color:#ff6f5e" OnClick="deletePropietarioBtn_Click"/>
             <br/>
             <br/>
             <br/>
-            <asp:Label ID="labelListaPropietarios" runat="server" Text="Tabla de propietarios" Font-Names="Bahnschrift" ForeColor="White"  Font-Size="30px"></asp:Label>
+            <asp:Label ID="labelListaUsuarios" runat="server" Text="Tabla de usuarios" Font-Names="Bahnschrift" ForeColor="White"  Font-Size="30px"></asp:Label>
             <br/>
             <asp:GridView ID="gridView" runat="server" HorizontalAlign="Center" style="margin-top:30px;" Font-Names="Bahnschrift" Font-Size="20px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
                 <FooterStyle BackColor="White" ForeColor="#000066" />
@@ -40,3 +40,4 @@
     </form>
 </body>
 </html>
+

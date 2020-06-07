@@ -11,7 +11,7 @@ namespace Muni.Pages
 {
 
 
-    public partial class propietariosDelete
+    public partial class usuariosUpdate
     {
 
         /// <summary>
@@ -42,31 +42,85 @@ namespace Muni.Pages
         protected global::System.Web.UI.WebControls.Label catergoryLbl;
 
         /// <summary>
-        /// labelDocIDPropietario control.
+        /// labelOLDUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelDocIDPropietario;
+        protected global::System.Web.UI.WebControls.Label labelOLDUsername;
 
         /// <summary>
-        /// textBoxDocIDInput control.
+        /// textBoxOLDUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBoxDocIDInput;
+        protected global::System.Web.UI.WebControls.TextBox textBoxOLDUsername;
 
         /// <summary>
-        /// deletePropietarioBtn control.
+        /// labelNewUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button deletePropietarioBtn;
+        protected global::System.Web.UI.WebControls.Label labelNewUsername;
+
+        /// <summary>
+        /// textBoxNewName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textBoxNewName;
+
+        /// <summary>
+        /// labelNewPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelNewPassword;
+
+        /// <summary>
+        /// textBoxNewPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textBoxNewPassword;
+
+        /// <summary>
+        /// labelNewIsAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelNewIsAdmin;
+
+        /// <summary>
+        /// isAdminCheckbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox isAdminCheckbox;
+
+        /// <summary>
+        /// updateUsuarioBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updateUsuarioBtn;
 
         /// <summary>
         /// labelListaPropietarios control.

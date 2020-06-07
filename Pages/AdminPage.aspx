@@ -20,8 +20,6 @@
         <div style="text-align:center;margin-top:20px">
         </div>
         <div style="text-align:center">
-            <asp:Button ID="agregarUsuariosBtn" runat="server" Text="Agregar Usuarios" Width="700px" BorderWidth="0px" Font-Bold="True" Font-Names="Bahnschrift" Font-Size="40px" ForeColor="White" style="margin-top:30px ;background-color:#ff6f5e" OnClick="addUsuarioBtn_Click"/>
-            <br />
             <asp:Button ID="crudTablesBtn" runat="server" Text="Edición de entidades" Width="700px" BorderWidth="0px" Font-Bold="True" Font-Names="Bahnschrift" Font-Size="40px" ForeColor="White" style="margin-top:30px ;background-color:#ff6f5e" OnClick="crudBtn_Click"/>
             <br />
             <asp:Button ID="verPropiedadesDePropietarioBtn" runat="server" Text="Ver propiedades de un propietario" Width="700px" BorderWidth="0px" Font-Bold="True" Font-Names="Bahnschrift" Font-Size="40px" ForeColor="White" style="margin-top:30px ;background-color:#ff6f5e" OnClick="verPropiedadesDePropietarioBtn_Click"/>

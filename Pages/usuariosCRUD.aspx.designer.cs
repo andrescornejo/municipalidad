@@ -11,79 +11,79 @@ namespace Muni.Pages
 {
 
 
-    public partial class AdminPage
+    public partial class usuariosCRUD
     {
 
         /// <summary>
-        /// logoutBtn control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button logoutBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// welcomeLbl control.
+        /// backBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label welcomeLbl;
+        protected global::System.Web.UI.WebControls.Button backBtn;
 
         /// <summary>
-        /// userLbl control.
+        /// catergoryLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label userLbl;
+        protected global::System.Web.UI.WebControls.Label catergoryLbl;
 
         /// <summary>
-        /// crudTablesBtn control.
+        /// createUsuariosBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button crudTablesBtn;
+        protected global::System.Web.UI.WebControls.Button createUsuariosBtn;
 
         /// <summary>
-        /// verPropiedadesDePropietarioBtn control.
+        /// updateUsuariosBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button verPropiedadesDePropietarioBtn;
+        protected global::System.Web.UI.WebControls.Button updateUsuariosBtn;
 
         /// <summary>
-        /// verPropietarioDePropiedadBtn control.
+        /// deleteUsuariosBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button verPropietarioDePropiedadBtn;
+        protected global::System.Web.UI.WebControls.Button deleteUsuariosBtn;
 
         /// <summary>
-        /// verPropiedadesDeUsuario control.
+        /// labelListaUsuarios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button verPropiedadesDeUsuario;
+        protected global::System.Web.UI.WebControls.Label labelListaUsuarios;
 
         /// <summary>
-        /// verServiciosBtn control.
+        /// gridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button verServiciosBtn;
+        protected global::System.Web.UI.WebControls.GridView gridView;
     }
 }

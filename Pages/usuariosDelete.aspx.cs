@@ -8,30 +8,30 @@ using System.Web.UI.WebControls;
 
 namespace Muni.Pages
 {
-    public partial class propietariosDelete : System.Web.UI.Page
+    public partial class usuariosDelete : System.Web.UI.Page
     {
         string usernameGot;
         protected void Page_Load(object sender, EventArgs e)
         {
             usernameGot = Request.QueryString["username"];
-            this.gridView.DataSource = God.getPropietarios();
+            this.gridView.DataSource = God.getUsuarios();
             this.gridView.DataBind();
         }
         protected void backBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("propietariosCRUD.aspx?username=" + usernameGot);
+            Response.Redirect("usuariosCRUD.aspx?username=" + usernameGot);
         }
 
         protected void deletePropietarioBtn_Click(object sender, EventArgs e)
         {
-            string docID = textBoxDocIDInput.Text;
+            string docID = textBoxUsername.Text;
             if (docID.Length != 0)
             {
                 God.deletePropietario(docID);
-                this.textBoxDocIDInput.Text = "";
-                this.gridView.DataSource = God.getPropietarios();
+                this.textBoxUsername.Text = "";
+                this.gridView.DataSource = God.getUsuarios();
                 this.gridView.DataBind();
-                MessageBox.Show("Propietario borrado");
+                MessageBox.Show("Usuario borrado");
             }
             else
                 MessageBox.Show("Error en las entradas");

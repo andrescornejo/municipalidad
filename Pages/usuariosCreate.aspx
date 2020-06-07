@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="addUsersFromAdmin.aspx.cs" Inherits="Muni.Pages.addUsersFromAdmin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="usuariosCreate.aspx.cs" Inherits="Muni.Pages.addUsersFromAdmin" %>
 
 <!DOCTYPE html>
 
